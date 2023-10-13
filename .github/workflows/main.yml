@@ -8,14 +8,10 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
-
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: 192.168.18.5
-        username: teste
-        password: ${{ secrets.SERVER_SSH_KEY }}
-        protocol: ftps
-        port: 21 # todo replace with your web hosts ftps port
+        - uses: joutvhu/ftp-transfer@v1
+          with:
+            host: localhost
+            port: 21
+            username: teste
+            password: Kvothe1995@.
+           
