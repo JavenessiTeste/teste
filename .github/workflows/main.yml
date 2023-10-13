@@ -1,4 +1,7 @@
-on: push
+on: 
+  push:
+    branches: main
+  
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -13,6 +16,6 @@ jobs:
       with:
         server: 192.168.18.5
         username: teste
-        password: ${{ secrets.ftp_server }}
+        password: ${{ secrets.SERVER_SSH_KEY }}
         protocol: ftps
         port: 21 # todo replace with your web hosts ftps port
