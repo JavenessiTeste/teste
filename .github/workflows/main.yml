@@ -14,8 +14,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: localhost
+        server: 192.168.18.5
         username: teste
-        password: ${{ secrets.SERVER_SSH_KEY }}
+        password: Kvothe1995@.
         protocol: ftps
         port: 21 # todo replace with your web hosts ftps port
