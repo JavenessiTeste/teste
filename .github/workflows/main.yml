@@ -18,3 +18,4 @@ jobs:
       run: |
         echo "Enviando arquivos por FTP..."
         lftp -e "set ssl:verify-certificate no; open -u ${{ secrets.username }},${{ secrets.password }} ftp://ftp.javenessi.com.br; mirror -R -e ./ /www/temp/testes/Voltz; quit"
+     
