@@ -17,5 +17,5 @@ jobs:
         server: ${{secrets.server}}
         username: ${{secrets.username}}
         password: ${{secrets.password}}
-        local-dir: /www/temp/testes/Voltz/
+        local-dir: /www/temp/testes/
        
