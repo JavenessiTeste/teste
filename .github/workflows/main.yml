@@ -17,5 +17,6 @@ jobs:
         server: ${{secrets.server}}
         username: ${{secrets.username}}
         password: ${{secrets.password}}
+        port: 21
         local-dir: ./
        
