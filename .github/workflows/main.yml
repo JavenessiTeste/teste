@@ -8,15 +8,13 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
-
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{secrets.server}}
-        username: ${{secrets.username}}
-        password: ${{secrets.password}}
-        port: 21
-        local-dir: ./
+      - name: Checkout código
+        uses: actions/checkout@v2
+  
+      - name: Instalar cliente FTP
+        run: sudo apt-get install lftp
+  
+      - name: Enviar arquivos por FTP
+        run: |
+          lftp -e "set ssl:verify-certificate no; open -u ${{ secrets.username }},${{ secrets.password }} ftp://ftp.javenessi.com.br; mirror -R -e ./C:\Users\desen\OneDrive\Área de Trabalho\teste .//www/temp/testes/Voltz; quit"
        
