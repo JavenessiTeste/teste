@@ -4,17 +4,16 @@ on:
   
 name: 🚀 Deploy website on push
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v2
-  
-      - name: Instalar cliente FTP
-        run: sudo apt-get install lftp
-  
-      - name: Enviar arquivos por FTP
-        run: |
-          lftp -e "set ssl:verify-certificate no; open -u ${{ secrets.username }},${{ secrets.password }} ftp://ftp.javenessi.com.br; mirror -R -e C:\Users\desen\teste\nome-do-seu-projeto ./www/temp/testes/Voltz; quit"
-       
+    - name: Checkout código
+      uses: actions/checkout@v2
+
+    - name: Instalar cliente FTP
+      run: sudo apt-get install lftp
+
+    - name: Enviar arquivos por FTP
+      run: |
+        lftp -e "set ssl:verify-certificate no; open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ftp://ftp.javenessi.com.br; mirror -R -e . ./www/temp/testes/Voltz; quit"
