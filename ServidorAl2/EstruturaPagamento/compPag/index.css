@@ -1,0 +1,117 @@
+.payment-form {
+
+}
+
+
+.boleto-item {
+	min-height: 75px;
+}
+
+
+
+.boleto-item img{
+	margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 57px;
+    float: left;
+    margin: 0 5px 0 5px;
+    width: 100%;
+    max-width: 70px;
+}
+
+
+.boleto-text{
+    font-size: 14px;
+    padding-top: 7%;
+    font-weight: 400;
+    padding-top: 5%;
+    margin: 0;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: rgba(78,89,115,1);
+}
+
+.botaoForm {
+    cursor: pointer;
+    margin: 35px auto 20px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #007bff;
+    padding: 20px 0;
+    border: 1px solid #007bff;
+    background: 0 0;
+    border-radius: 5px;
+}
+
+
+.botaoForm:hover {
+    color: #fff;
+    background: #007bff;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.header{
+text-align: center;
+}
+
+.dadosPagadorp{
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.loader {
+  position: relative;
+  text-align: center;
+  margin: 15px auto 35px auto;
+  z-index: 9999;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 10px solid rgba(0, 0, 0, .3);
+  border-radius: 50%;
+  border-top-color: #007bff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+/** MODAL STYLING **/
+
+.modal-content {
+  border-radius: 0px;
+  box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.7);
+}
+
+.modal-backdrop.show {
+  opacity: 0.75;
+}
+
+.loader-txt {
+  p {
+    font-size: 13px;
+    color: #666;
+    small {
+      font-size: 11.5px;
+      color: #999;
+    }
+  }
+}

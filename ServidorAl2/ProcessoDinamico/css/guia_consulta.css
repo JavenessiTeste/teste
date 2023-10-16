@@ -1,0 +1,59 @@
+* {
+    font-family: Verdana,Arial,Helvetica;
+    font-size: 12px;
+}
+
+table, tr {
+    border: 0;
+}
+
+div.label1 {
+    font-family: Verdana,Arial,Helvetica;
+    padding: 2px;
+    color: #666;
+}
+
+div.valor1, div.valor2 {
+    font-weight: bold;
+    font-family: Tahoma,Arial,Helvetica;
+    padding: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #3a3a3a;
+}
+
+.grade {
+    font-weight: 100;
+    letter-spacing: 8px;
+    text-align: left;
+    border-bottom: #3a3a3a solid 1px;
+    margin: 0;
+
+    padding: 0;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    color: #3a3a3a;
+    font-family: "Courie New";
+
+
+}
+
+.subLabel {
+    padding: 5px;
+    padding-left: 12px;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.labelGrupo {
+    font-size: 0.8em;
+    background-color: #CECECE;
+
+}
+
+.bgEscuro {
+    background-color: #eFeFeF;
+}
+
+
+
