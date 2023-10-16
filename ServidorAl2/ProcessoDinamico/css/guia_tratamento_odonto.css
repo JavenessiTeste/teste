@@ -1,0 +1,151 @@
+* {
+    font-family: Verdana,Arial,Helvetica;
+    font-size: 10px;
+}
+
+table, tr {
+    border: 0;
+    border-style:solid;
+}
+
+div.label1 {
+    font-family: Verdana,Arial,Helvetica;
+    padding: 0px;
+    color: #666;
+    letter-spacing: -1px;
+}
+
+div.valor0, div.valor1, div.valor2, .valor2A {
+    font-weight: bold;
+    font-family: Tahoma,Arial,Helvetica;
+    padding: 2px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    padding-left:8px;
+    color: #3a3a3a;
+}
+
+div.valor0 {
+    font-weight: normal;
+}
+
+.grade, .grade2 {
+    font-weight: normal;
+
+    text-align: left;
+    border-bottom: #3a3a3a solid 1px;
+    margin: 0;
+
+
+    padding-bottom: 2px;
+    padding-left: 8px;
+    color: #3a3a3a;
+    font-family: "Courie New";
+
+    padding: 1px;
+    letter-spacing: 4px;
+    line-height: 18px;
+    font-size: 9px;
+}
+
+.subLabel, .subLabelA, .subLabelB {
+    padding: 1px;
+    padding-left: 4px;
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+.subLabelA {
+    padding-left: 47px;
+}
+
+.subLabelB {
+    padding-left: 32px;
+}
+
+.labelGrupo {
+    font-size: 10px;
+    background-color: #CECECE;
+
+}
+
+.bgEscuro {
+    background-color: #eFeFeF;
+}
+
+#GridProcsRel {
+    border: solid 1px;
+}
+
+#GridProcsRel td {
+    border: none;
+}
+
+#GridProcsRel .subLabel {
+    padding: 1px;
+}
+
+#GridProcsRel .grade, .grade2 {
+    padding: 0;
+    padding-left: 2px;
+    letter-spacing: 3px;
+    
+}
+
+#GridProcsRel .grade2 {
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+#GridDataAssinatura .grade{
+    letter-spacing: 3px;
+}
+
+#GridProcsRel .label1 {
+    font-size: 9px;
+}
+
+.valor3 {
+    line-height: 18px;
+    letter-spacing: 6px;
+    font-weight: normal;
+}
+
+.subLabel2 {
+    padding-left: 4px;
+    font-weight: normal;
+    font-size: 0.94em;
+    padding: 1px;
+    line-height: 18px;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+.grade3 {
+    font-weight: normal;
+    text-align: left;
+    border-bottom: #3a3a3a solid 1px;
+    margin: 0;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    color: #3a3a3a;
+    font-family: "Courie New";
+    padding: 1px;
+    letter-spacing: 90px;
+    line-height: 18px;
+}
+   body {
+     margin-top: 1mm;
+     margin-left: 1mm;
+     margin-right: 1mm;
+     margin-bottom: 1mm;
+   }
+   .red {color: #FF0000;}
+   .bold{   font-weight: bold;}
+   .arial{   font-family: Arial, Helvetica, sans-serif;}
+   .font_6{ font-size: 6px; }
+   .font_10{ font-size: 9px; }
+   .font_12{ font-size: 12px; }
+   .font_1_5{ font-size: 1.5em; }
+   .borda{ border-style:solid; border-width:1px; }
+   .borda2{ border-right-style:solid; border-right-width:1px; }

@@ -1,0 +1,60 @@
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    border-radius: 0 !important;
+    color: #858585;
+    background-color: #ffffff;
+    border: 1px solid #d5d5d5;
+    padding: 5px 4px 6px;
+    font-size: 14px;
+    font-family: inherit;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+.btn-success, .btn-success:focus {
+    background-color: #87b87f !important;
+    border-color: #87b87f !important;
+}
+
+.btn {
+    display: inline-block;
+    color: #FFF !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-image: none !important;
+    border: 5px solid #FFF;
+        border-top-color: rgb(255, 255, 255);
+        border-right-color: rgb(255, 255, 255);
+        border-bottom-color: rgb(255, 255, 255);
+        border-left-color: rgb(255, 255, 255);
+    border-radius: 0;
+    box-shadow: none !important;
+    -webkit-transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
+    -o-transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
+    transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+    position: relative;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-family: inherit;
+    margin: 0;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.btn-info, .btn-info:focus {
+    background-color: #6fb3e0 !important;
+    border-color: #6fb3e0;
+}

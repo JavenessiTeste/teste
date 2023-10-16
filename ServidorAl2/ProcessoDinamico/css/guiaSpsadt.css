@@ -1,0 +1,102 @@
+* {
+    font-family: Verdana,Arial,Helvetica;
+    font-size: 10px;
+}
+
+table td {
+    
+}
+
+table, tr {
+    border: 0;
+}
+
+div.label1 {
+    font-family: Verdana,Arial,Helvetica;
+    padding: 0px;
+    color: #666;
+    letter-spacing: -1px;
+}
+
+div.valor0, div.valor1, div.valor2, .valor2A {
+    font-weight: bold;
+    font-family: Tahoma,Arial,Helvetica;
+    padding: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #3a3a3a;
+}
+
+div.valor0 {
+    font-weight: normal;
+}
+
+.grade, .grade2 {
+    font-weight: normal;
+
+    text-align: left;
+    border-bottom: #3a3a3a solid 1px;
+    margin: 0;
+
+
+    padding-bottom: 2px;
+    padding-left: 8px;
+    color: #3a3a3a;
+    font-family: "Courie New";
+
+    padding: 1px;
+    letter-spacing: 4px;
+    line-height: 18px;
+}
+
+.subLabel, .subLabelA, .subLabelB {
+    padding: 1px;
+    padding-left: 4px;
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+.subLabelA {
+    padding-left: 47px;
+}
+
+.subLabelB {
+    padding-left: 32px;
+}
+
+.labelGrupo {
+    font-size: 10px;
+    background-color: #CECECE;
+
+}
+
+.bgEscuro {
+    background-color: #eFeFeF;
+}
+
+#GridProcsRel {
+    border: solid 1px;
+}
+
+#GridProcsRel td {
+    border: none;
+}
+
+#GridProcsRel .subLabel {
+    padding: 1px;
+}
+
+#GridProcsRel .grade, .grade2 {
+    padding: 0;
+    padding-left: 2px;
+    letter-spacing: 3px;
+}
+
+#GridProcsRel .grade2 {
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+
+#GridDataAssinatura .grade{
+    letter-spacing: 3px;
+}

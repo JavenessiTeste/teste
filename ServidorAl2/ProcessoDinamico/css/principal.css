@@ -1,0 +1,757 @@
+
+
+
+
+/* Inicialização geral. Seto todos os elementos com um valor 0 para margin e padding */
+*  {
+	margin: 0;
+	padding: 0;	
+}
+
+
+body {
+	font-family: Verdana, Arial, Helvetica;
+	text-align: center; /* hack para centralizar no I.E 8 */
+}
+
+#pagina {
+	position:relative;
+	min-height: 100%;
+	height: 100%;	
+}
+
+* html #pagina
+{
+height: 100%;
+}
+
+#logo_principal {
+	margin: 10px;
+}
+
+#nome_operadora {
+	color: #2b475d;
+	height: 75px;	
+	line-height: 75px;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 21px;
+	text-transform: capitalize;
+}
+
+/*******************************************/
+/* TOPO */
+/*******************************************/
+#topo {
+	width: 100%;
+	background: url("../images/bg_topo.gif") repeat-x top;
+	text-align: left; /* hack para centralizar no I.E 8 */
+}
+
+#topo .topo_caixa_esquerda {
+	width: 160px;
+	float: left;
+}
+
+#topo .topo_caixa_centro {
+	float: left;
+}
+
+#topo .topo_caixa_direita {
+	float: right;
+}
+
+#topo .local_navegado {	
+	clear: both;
+	height: 19px;
+	background: url("../images/bg_local_navegado.gif") repeat-x bottom;
+}
+
+#topo .local_navegado h5 {
+	font-weight: normal;
+	color: #666;
+	font-size: 10px;
+	background: url("../images/seta_local_navegado.png") no-repeat center left;
+	float: right;
+	padding-left: 25px;
+	margin-right: 15px;
+}
+
+/* Caixa com dados do usuario logado */
+#caixa_dados_usuario  {
+	background: #F4F4F4;
+	border: #2b475d solid 1px;
+	/*width: 270px;*/
+	margin: 10px;
+	padding: 10px;
+	color: #2b475d;
+	font-family: arial, helvetica;
+	font-weight: bold;
+}
+
+#caixa_dados_usuario h5  {
+	text-align: left;	
+	background: url("../images/icon_pessoa.png") no-repeat center left;
+	margin-bottom: 6px;
+    padding-left: 18px;
+}
+
+#caixa_dados_usuario .lblTexto, .lblValor {	
+	display: block;
+	float: left;
+	font-size: 10px;	
+}
+
+#caixa_dados_usuario div {
+    float: left;
+}
+
+#caixa_dados_usuario .lblTexto {	
+	width: 50px;
+}
+
+#caixa_dados_usuario .lblTexto {	
+	
+}
+
+#caixa_dados_usuario .link {
+    font-size: 0.6em;
+    font-weight: normal;
+    color: #666;
+
+}
+
+#caixa_dados_usuario .link#LinkSair,
+#caixa_dados_usuario .link#AlterarSenha {
+    padding-left: 20px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+#caixa_dados_usuario .link#LinkSair { background: transparent url("../images/exit_shutdown-16.png") no-repeat left center; }
+
+#caixa_dados_usuario .link#AlterarSenha { background: transparent url("../images/cadeado16.png") no-repeat left center; }
+
+#caixa_dados_usuario p.tempoRestante { font-size: 0.7em; padding-left: 30px; color: #666; font-weight: normal; text-align: left;}
+
+/* MENU */
+#menu {
+    position:absolute;
+    left:0px;/* fix para o internet  */
+    width: 15%;
+    min-height: 500px; /* para empurrar o rodape para baixo e mante-lo já no minimo 500px */
+    min-width: 195px;
+    text-align: left;
+	z-index:500;
+}
+
+#mainMenu {
+    background-color: #f8f8f8;
+    width: 180px;
+    margin: 8px;
+    margin-top: 25px;
+}
+
+#mainMenu .menuTitulo {
+    background: transparent url('../images/fundo-titulo-menu.gif') top left no-repeat;
+    height: 29px;
+    line-height:29px;
+    color: #FFF;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 15px;
+    font-variant: small-caps;
+}
+
+#mainMenu ul li{
+    list-style: none;
+}
+
+#mainMenu .menuItem, #mainMenu .menuItemHL {
+    text-decoration: none;
+    color: #959595;
+    font-size: 10px;
+    display: block;
+    background: transparent url('../images/menu_item_bg.gif');
+    height: 27px;
+    line-height: 27px;
+    text-align: left;
+    padding-left: 8px;
+}
+
+#mainMenu .menuItem:hover, #mainMenu .menuItemHL {
+    background: transparent url('../images/menu_item_bg_hl.gif');
+    color: #0065d7;
+}
+
+
+/*******************************************/
+/* CONTEUDO */
+/*******************************************/
+/*
+#conteudo {
+	padding-bottom: 30px;
+	padding-left:200px;
+	margin: 25px auto 100px 15px;
+	text-align: left; /* hack para centralizar no I.E 8 */  /*      
+}*/
+#conteudo {
+    width:auto;
+    min-height: 290px;
+	margin-top:25px;
+	margin-left:15px;
+	margin-bottom:100px;
+	margin-left:200px;
+	/*margin: 25px auto 100px 15px;*/
+	text-align: left; /* hack para centralizar no I.E 8 */        
+    float: left;
+}
+
+/*******************************************/
+/* RODAPE */
+/*******************************************/
+/*#teste_rodape{
+	position:absolute;
+	bottom:0px;
+	text-align:center;
+	width:100%;
+
+}*/
+#rodape {
+	position:relative;
+	text-align: center; /* hack para centralizar no I.E 8 */
+    background-image: url("../images/footer-portal-border.png");
+    min-height: 70px;
+    padding-top: 50px;
+    margin-top:100px;
+    max-height:70px;/* fix para internet explorer */
+    clear: both;    
+}
+/*
+
+#rodape {
+	position:static;
+	bottom:0px;
+	width:100%;
+	max-height:70px;
+	min-height:70px;
+	padding-top:20px;
+	text-align: center; /* hack para centralizar no I.E 8 */
+/*    background-image: url("../images/footer-portal-border.png");
+	background-repeat:repeat-x;
+	clear:both;
+	margin-top: -7.5em; 
+}*/
+
+#rodape div {
+	font-size: 7pt;
+    color: #666;
+    padding: 3px;
+}
+
+#rodape a {
+	font-size: 8pt;
+    color: #666;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+/* Caixa do form padrao */
+.formDefault {
+    border: #DADADA solid 1px;    
+}
+
+.formDefault .formCaption {
+    height: 30px;
+}
+
+.formDefault .formDefault_Header, 
+.ui-dialog-title  /* para substituir o padrao da jquery */ {
+	background: url("../images/bg_HeaderFormDefault.gif") no-repeat right center;
+	color: #4c6877;
+	padding-left: 8px;
+	line-height: 25px;	
+	font-weight: bold;
+	font-variant: small-caps;
+	font-family: tahoma, Arial, Helvetica;
+}
+
+.formDefault .formDefault_Header h4 {
+    font-size: 12px;
+}
+
+.formDefault .formDefault_Conteudo {
+	background: #e3e9ef;
+	padding: 30px;
+}
+
+.formDefault .formDefault_Rodape {
+	padding: 12px;
+	background: #e3e9ef;
+	border-top: #DADADA solid 1px;
+}
+
+.formDefault .formDefault_Conteudo_linha {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.formDefault .formDefault_Conteudo_linha_hidden {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    visibility:hidden;
+    display:none;
+}
+
+.formDefault .formDefault_Conteudo_linha_Label, .formDefault .formDefault_Conteudo_linha_Input{
+	float: left;
+}
+
+.formDefault .formDefault_Conteudo_linha_Label {
+	min-width: 220px;
+    height: 100%;
+    line-height: 100%;
+}
+
+.formDefault .headerSecao {
+    font-variant: small-caps;
+    margin: 10px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.labelDefault, .labelDefault_Req {
+    color: #485677;
+    font-size: 12px;
+}
+
+.lineBevelDefault {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.labelDefault_Req {
+    font-weight: bold;
+}
+
+/* Classes uteis */
+.clareador {
+	clear: both;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.textoContraste {
+	color: #f7941d;
+}
+
+.textoContraste1 {
+	color: #01C02D;
+}
+
+.mensagem {
+	margin: 10px;
+	text-align: center;
+	color: #333;
+}
+
+
+
+#status, .statusBox {
+	background: transparent url("../images/ajax-loader2.gif") no-repeat center right;
+	padding-right: 30px;
+	margin-right: 15px;
+	height: 18px;
+	line-height: 15px;
+	text-align: right;
+	font-size: 12px;
+	font-family: Courier, Arial;
+    display: none;
+}
+
+#respostaAjax {
+	margin-top: 50px;
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+}
+
+#respostaAjax h5{
+	padding-left: 20px;
+    font-size: 0.7em;
+}
+
+#respostaAjax  .barraLinks{
+	padding: 20px;
+	border-top: #ccc solid 1px;
+}
+
+#respostaAjax  .barraLinks span{
+	padding: 10px;
+	padding-left: 35px;
+}
+
+.lista-item {
+	font-family: tahoma, arial;	
+	background: transparent url("../images/lista-item-separador.jpg") no-repeat top center;
+	margin: 20px;
+	margin-top: 40px;
+}
+
+.lista-item-titulo {
+	background: transparent url("../images/bg_item_lista_titulo.gif") no-repeat center left;	
+	padding-left: 10px;
+	font-family: Verdana, Arial;
+	height: 27px;
+	line-height: 27px;
+	margin-top: 16px;
+	font-variant: small-caps;    
+}
+
+.lista-item-imagem, .lista-item-desc {
+	float: left;	
+}
+
+.lista-item-imagem  {
+	width: 20%;
+	padding: 5px;
+	padding-top: 60px;
+	text-align: center;
+}
+
+.lista-item-desc {
+	width: 60%;
+	padding: 5px;
+}
+
+.lista-item-info {
+	color: #041738;
+	font-size: 8pt;
+	font-weight: bold;
+	margin-top: 14px;
+}
+
+.lista-item-info span {
+	color: #005b89;
+	font-weight: normal;
+}
+
+
+/* BOTOES */
+.botaoDefault_Pesquisar, .botaoDefault_Voltar, .botaoDefault_Ajuda, .botaoDefault_Avancar, .botaoDefault_Ok, .botaoDefault_Fechar, .botaoDefault_NovoRegistro,
+.botaoDefault_Imprimir, .botaoDefault_Pdf, .botaoDefault_CheckList, .botaoDefault_Pessoas, .botaoDefault_AddPessoas, .botaoDefault_Report,
+.miniBotaoDefault_Add, .miniBotaoDefault_Pesquisar {
+    width: 120px;
+    height: 29px;
+    color: #222;
+    cursor: pointer;
+    border: transparent solid 1px;
+    text-align: center;
+    background-color: #CAE8EA;
+    font: normal 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #24444c;
+    border: 1px solid #C1DAD7;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.botaoDefault_Pesquisar:hover, .botaoDefault_Voltar:hover, .botaoDefault_Avancar:hover, .botaoDefault_Ok:hover, .botaoDefault_Fechar:hover, .botaoDefault_NovoRegistro:hover,
+.botaoDefault_Imprimir:hover, .botaoDefault_Pdf:hover, .botaoDefault_CheckList:hover, .botaoDefault_Pessoas:hover, .botaoDefault_AddPessoas:hover, .botaoDefault_Report:hover,
+.miniBotaoDefault_Add:hover, .miniBotaoDefault_Pesquisar:hover {
+    border-top: #ff8400 solid 1px;
+    color: #FF0000;
+}
+
+.botaoDefault_Voltar {
+    background-image: url("../images/btnVoltar.png");
+    background-repeat:  no-repeat;
+    background-position: 8px center;
+    width: 110px;
+}
+
+.botaoDefault_Pesquisar  {
+    background-image: url("../images/btnPesquisar.png");
+    background-repeat:  no-repeat;
+    background-position: 1px center;
+    width: 100px;
+}
+
+.botaoDefault_Avancar  {
+    background-image: url("../images/btnAvancar.png");
+    background-repeat:  no-repeat;
+    background-position: 1px center;
+}
+
+.botaoDefault_Ajuda {
+    background-image: url("../images/btnAjuda.png");
+    background-color: transparent;
+    background-repeat:  no-repeat;
+    background-position: center;
+    width: 32px;
+    border: none;
+}
+
+.botaoDefault_Ok {
+    background-image: url("../images/btnOk.png");
+    background-repeat:  no-repeat;
+    background-position: 8px center;
+    width: 100px;
+}
+
+.botaoDefault_NovoRegistro{
+    background-image: url("../images/ImageAdd16_2.png");
+    background-repeat:  no-repeat;
+    background-position: 4px center;
+  
+}
+
+.botaoDefault_Fechar {
+    background-image: url("../images/exclusao.png");
+    background-repeat:  no-repeat;
+    background-position: 4px;
+}
+
+.botaoDefault_Imprimir {
+    background-image: url("../images/Print_32(2).png");
+    background-repeat:  no-repeat;
+    background-position: left center;
+}
+
+.botaoDefault_Pdf {
+    background-image: url("../images/btnPdf.png");
+    background-repeat:  no-repeat;
+    background-position: left center;
+}
+
+.botaoDefault_CheckList {
+    background-image: url("../images/btnCheckList.png");
+    background-repeat:  no-repeat;
+    background-position: 1px center;
+}
+
+.botaoDefault_Pessoas {
+    background-image: url("../images/btnPessoas.png");
+    background-repeat:  no-repeat;
+    background-position: 2px center;
+}
+
+.botaoDefault_AddPessoas {
+    background-image: url("../images/btnAddPessoas.png");
+    background-repeat:  no-repeat;
+    background-position: 2px center;
+}
+
+.botaoDefault_Report {
+    background-image: url("../images/ImageReport22.png");
+    background-repeat:  no-repeat;
+    background-position: 0px center;
+    width: 130px;
+}
+
+.botaoDefault_Ajuda:hover {
+}
+
+/* Faço o resize dos mini botoes */
+.miniBotaoDefault_Add, .miniBotaoDefault_Pesquisar {
+    width: 100px;
+    height: 22px;  
+}
+
+.miniBotaoDefault_Add {
+    background-image: url("../images/ImageAdd16_2.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.miniBotaoDefault_Pesquisar {
+    background-image: url("../images/ImagePesquisar16.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.link, .linkVoltar {
+    /*background: transparent url("../images/btnVoltar.png") no-repeat center left;*/
+    cursor: pointer;
+    padding: 5px;
+    /*padding-left: 35px;*/
+    color: blue;
+    margin: 8px;
+    font-size: 8pt;    
+}
+
+.linkDefault { text-decoration: none; }
+
+.link:hover, .linkVoltar:hover {
+    text-decoration: underline;
+}
+
+.minibotao {
+    cursor: pointer;
+    border: 0;
+}
+
+#messageBox {
+}
+
+#messageBox .messageBoxContent {
+    text-align: left;
+    padding: 6px;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica;
+}
+
+#messageBox .messageBoxContent li {
+    margin: 4px;
+}
+
+/* Adaptações no tema da jQuery*/
+
+.ui-dialog-title {
+    background: transparent;
+}
+
+.ui-dialog {
+    font-size: 14px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0;
+}
+
+#boxAjuda, #boxMensagemAjax {
+    padding: 15px;
+    font-size: 12px;
+    text-align: left;
+}
+
+#boxAjuda h6, #boxMensagemAjax h6 {
+    font-size: 1.2em;
+    margin: 8px;
+}
+
+#boxAjuda li, #boxMensagemAjax li {
+    margin: 4px;
+}
+
+/*
+Legenda do grid
+*/
+
+.legenda_grid {
+    margin-top: 5px;
+}
+
+.legenda_grid ul {
+    list-style: none;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.legenda_grid li {
+    float: left;
+    margin: 8px;
+    margin-right: 12px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.legenda_grid li img {
+    margin-right: 5px;
+}
+
+#tooltip {
+    font-size: 10px;
+}
+
+#tooltip.default {
+    background-color: #ffffcc;
+}
+
+#tooltip.pretty {
+	font-family: Arial;
+	border: none;
+	width: 210px;
+	padding:20px;
+	height: 135px;
+	opacity: 0.8;
+	background: url('../images/shadow.png');
+}
+
+#tooltip.pretty h3 {
+	margin-bottom: 0.75em;
+	font-size: 12pt;
+	width: 220px;
+	text-align: center;
+}
+
+#tooltip.pretty div { width: 220px; text-align: left; }
+
+#tooltip.fancy {
+	background: url('../images/shadow2.png');
+	padding-top: 60px;
+	height: 100px;
+}
+
+#tooltip.fancy.viewport-right {
+	background: url('../images/shadow2-reverse.png');
+}
+
+#extended { margin: 2em 0; }
+#extended label { text-decoration: underline; }
+#yahoo { width: 7em; }
+#right, #right2 { text-align: right; }
+#tooltip.right { width: 250px; }
+#fancy2 { float: right; }
+
+#FlashMessage {
+    background-color: #ffffc1;
+    padding: 4px;
+    padding-left: 50px;
+    
+    color: red;
+    font-size: 0.7em;
+    margin-bottom: 30px;
+    border: solid 1px #CFCFCF;
+    background-image: url('../images/Warning-32.png');
+    background-repeat: no-repeat;
+    background-position: 5px 20px;
+    zoom: 1;
+}
+
+#FlashMessage h3 { margin-bottom: 8px; font-size: 1.2em; }
+#FlashMessage p.iconeFechar { text-align: right; }
+#FlashMessage p.iconeFechar img { cursor: pointer; }
+
+#boxAlterarSenha {
+    text-align: left;
+}
+
+#boxAlterarSenha label {
+    display: block;
+    margin-top: 12px;
+}
+
+#boxAlterarSenha p {
+    padding: 10px;
+    font-size: 10px;
+    background-color: #ffffcc;
+}
+
+#boxAlterarSenha #AlterarSenhaStatus {
+    margin: 10px;
+}
+
+.atencao {
+    color: red;
+    font-weight: bold;
+}
+
+.fundoAmarelo {
+    border: #000 1px solid;
+    background-color: #ffffcc;
+}

@@ -1,0 +1,88 @@
+#BoxBotoes {
+    text-align: left;
+}
+
+.dadosCadastrais {
+    font-family: Verdana,Tahoma,"Courier New",monospace,arial,helvetica;
+    font-size: 16px;
+    text-align: left;
+    padding: 1px;    
+}
+.dadosCadastrais table {
+    border: #666 solid 1px;
+    border: 0;    
+    font-size: 12px;
+    min-width: 710px;
+}
+
+.dadosCadastrais table td,
+.dadosCadastrais table th {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+.dadosCadastrais .lblToValue {
+    text-align: right;
+    text-align: left;
+    padding-left: 20px;
+    width: 176px;
+}
+
+.dadosCadastrais .lblValue {
+    text-align: left;
+}
+
+.dadosCadastrais .lbl {
+    text-align: left;
+    font-weight: bold;
+    padding-top: 15px;
+    border-top: #666 solid 1px;
+
+}
+
+
+
+.dadosCadastrais h1 { 
+    font-size: 2.0em;
+}
+
+.dadosCadastrais h2 {
+    font-size: 1.8em;
+}
+
+.dadosCadastrais h3 {
+    font-size: 1.5em;
+}
+
+.dadosCadastrais h4 {
+    font-size: 1.0em;
+}
+
+.dadosCadastrais h5 {
+    font-size: 0.8em;
+}
+
+.dadosCadastrais h6 {
+    font-size: 0.6em;
+}
+
+
+
+.dadosCadastrais hr { 
+    border: none;
+    border-top: #666 solid 1px;
+    padding: 0;
+}
+
+.dadosCadastrais .comBG {
+    background-color: #D6D6D6;
+}
+
+.dadosCadastrais .jnGrid th {
+    text-align: left;
+}
+
+.dadosCadastrais .dataEmissao {
+    text-align: right;
+}
